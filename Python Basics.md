@@ -228,11 +228,12 @@ print(var1[0:13:3])
 >> Di me
 ```
 
-* <h3 style="color:#33FFA2">Reversing a string</h3>
+* <h3 style="color:#33FFA2">Reversing a string  (or other data structures)</h3>
 
 | D    | a    | n    | i    | e    | l    |
 | ---- | ---- | ---- | ---- | ---- | ---- |
-| 0    | -1   | -2   | -3   | -4   | -5   |
+| 0    | 1    | 2    | 3    | 4    | 5    |
+| -6   | -5   | -4   | -3   | -2   | -1   |
 
 ```python
 var1 = "Daniel"
@@ -240,14 +241,25 @@ print(var1[::-1])
 
 # From 4 to 1 (the loop ends in 2) by iterating one position in the negative
 print(var1[4:1:-1])
+
+# var1[5] es igual a var1[-1]
+print(var1[-1], "is iqual to", var1[5])
+# var1[4] es igual a var1[-2]
+print(var1[-2], "is iqual to", var1[4])
+
+# So now we have another way to reverse a string
+print(var1[-1:-7:-1])
 ```
 
 ```
 >> leinaD
 >> ein
+>> l is iqual to l
+>> e is iqual to e
+>> leinaD
 ```
 
-<h2 style="color:#33ECFF">Working with strings</h2>
+<h2 style="color:#33ECFF">Working with strings (or other data structures)</h2>
 
 * <h3 style="color:#33FFA2">Remove blanks</h3>
 
@@ -310,21 +322,128 @@ print(myName.upper())
 >> DANIEL RAMÍREZ UMAÑA
 ```
 
-
-
-
-
 * <h3 style="color:#33FFA2">Split</h3>
 
+Splits the string every time it encounters a separator character
+
+```python
+myName = "Daniel Ramírez Umaña"
+# Now myName is a list with 3 elements
+
+splited = myName.split("e")
+print(splited)
+
+splited = myName.split(" ")
+print(splited)
+
+splited = myName.split("a")
+print(splited)
+```
+
+```
+>> ['Dani', 'l Ramír', 'z Umaña']
+>> ['Daniel', 'Ramírez', 'Umaña']
+>> ['D', 'niel R', 'mírez Um', 'ñ', '']
+```
+
+* <h3 style="color:#33FFA2">Replacing a value</h3>
+
+By using `replace()` you van replace all letters equal to the one indicated by another specified one.
+
+```python
+myName = "Daniel Ramírez Umaña"
+
+replaced_1 = myName.replace('e','3')
+print(replaced_1)
+
+# You can also replace more than one character at a time
+replaced_1 = myName.replace('el','2')
+print(replaced_1)
+
+replaced_1 = myName.replace('a','_AA_')
+print(replaced_1)
+```
+
+```
+>> Dani3l Ramír3z Umaña
+>> Dani2 Ramírez Umaña
+>> D_AA_niel R_AA_mírez Um_AA_ñ_AA_
+```
+
+* 
+
+  ```python
+  ingredients = ["apple", "banana", "pineapple", "kiwi"]
+  new_recipe = []
+  
+  print(ingredients)
+  
+  for ingr in ingredients:
+      new_ingredient = ingr.replace("apple", "grapes")
+      new_recipe.append(new_ingredient)
+  
+  print(new_recipe)
+  
+  for ingr in ingredients:
+      ingr = ingr.replace("apple", "grapes")
+      new_recipe.append(ingr)
+  
+  print(new_recipe)
+  ```
 
 
-* <h3 style="color:#33FFA2">Replace</h3>
 
+* <h3 style="color:#33FFA2">Is / is not contained</h3>
 
+On the one hand you can check whether or not a value is contained in a string by using a `in` statement, on the other hand, using an `is not` statement you can get the opposite answer
 
-* <h3 style="color:#33FFA2">In  |  Not in</h3>
+```python
+myName = "Daniel Ramírez Umaña"
 
+print("Uma" in myName)
+print("Umma" in myName)
+print("Uma" not in myName)
+print("Umma" not in myName)
+```
 
+```
+>> True
+>> False
+>> False
+>> True
+```
 
 
 <h2 style="color:#33ECFF">Conditionals and Loops</h2>
+
+#### `if` condition :
+
+​    action
+
+#### `elif` condition :
+
+​    action
+
+#### `else` :
+
+​    action
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# This is the end of this tutorial
+
+## I very thank you!

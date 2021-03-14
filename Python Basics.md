@@ -370,29 +370,6 @@ print(replaced_1)
 >> D_AA_niel R_AA_mírez Um_AA_ñ_AA_
 ```
 
-* 
-
-  ```python
-  ingredients = ["apple", "banana", "pineapple", "kiwi"]
-  new_recipe = []
-  
-  print(ingredients)
-  
-  for ingr in ingredients:
-      new_ingredient = ingr.replace("apple", "grapes")
-      new_recipe.append(new_ingredient)
-  
-  print(new_recipe)
-  
-  for ingr in ingredients:
-      ingr = ingr.replace("apple", "grapes")
-      new_recipe.append(ingr)
-  
-  print(new_recipe)
-  ```
-
-
-
 * <h3 style="color:#33FFA2">Is / is not contained</h3>
 
 On the one hand you can check whether or not a value is contained in a string by using a `in` statement, on the other hand, using an `is not` statement you can get the opposite answer
@@ -416,15 +393,15 @@ print("Umma" not in myName)
 
 <h2 style="color:#33ECFF">Conditionals and Loops</h2>
 
-#### `if` condition :
+### `if` condition :
 
 ​    action
 
-#### `elif` condition :
+### `elif` condition :
 
 ​    action
 
-#### `else` :
+### `else` :
 
 ​    action
 

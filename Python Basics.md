@@ -166,6 +166,217 @@ print(var4)
 >> 65
 ```
 
+<h2 style="color:#33ECFF">Operators</h2>
+
+* <h3 style="color:#33FFA2">Arithmetic Operators</h3>
+
+| Operator | Name           | e.g.   |
+| -------- | -------------- | ------ |
+| +        | addition       | x + y  |
+| -        | subtraction    | x - y  |
+| *        | multiplication | x * y  |
+| /        | division       | x / y  |
+| %        | modulus        | x % y  |
+| **       | exponentiation | x ** y |
+| //       | floor division | x // y |
+
+```python
+print("5 + 2 is:  ", 5 + 2)
+print("2 - 5 is:  ", 2 - 5)
+print("5 * 5 is:  ", 5 * 5)
+print("7 / 2 is:  ", 7 / 2)
+print("19 % 4 is: ", 19 % 4)
+print("2 ** 3 is: ", 2 ** 3)
+print("36 // 3 is:", 36 // 3)
+```
+
+```
+>> 5 + 2 is:   7
+>> 2 - 5 is:   -3
+>> 5 * 5 is:   25
+>> 7 / 2 is:   3.5
+>> 19 % 4 is:  3
+>> 2 ** 3 is:  8
+>> 36 // 3 is: 12
+```
+
+<h3 style="color:#33FFA2">Binary Operators</h3>
+
+| Operator | Name | case 1               | case 2               | case 3               | case 4               | e.g.                | e.g.         |
+| -------- | ---- | -------------------- | -------------------- | -------------------- | -------------------- | ------------------- | ------------ |
+| \|       | or   | 1 \| 1 = 1           | 1 \| 0 = 1           | 0 \| 1 = 1           | 0 \| 0 = 0           | 1000 \| 1010 = 1010 | 8 \| 10 = 10 |
+| &        | and  | 1 & 1 = 1            | 1 & 0 = 0            | 0 & 1 = 0            | 0 & 0 = 0            | 1000 \| 1010 = 1000 | 8 & 10 = 8   |
+| ^        | xor  | 1 ^ 1 = 0            | 1 ^ 0 = 1            | 0 ^ 1 = 1            | 0 ^ 0 = 0            | 1000 \| 1010 = 0010 | 8 ^ 10 = 2   |
+| ~        | not  | ~00000000 = 11111111 | ~11111111 = 00000000 | ~00000001 = 11111110 | ~11110000 = 00001111 | ~1001 = 1111 0110   | ~9 = -10     |
+
+```python
+# or
+print(8|10)
+
+# and
+print(8&10)
+
+# xor
+print(8^10)
+
+# xor
+print(~1)
+print(~0)
+print(~9)
+```
+
+```
+>> 10
+>> 8
+>> 2
+>> -2
+>> -1
+>> -10
+```
+
+* <h3 style="color:#33FFA2">Assignment Operators</h3>
+
+| Operator | e.g.    | equivalent |
+| -------- | ------- | ---------- |
+| =        | x = y   | x = x      |
+| +=       | x += y  | x = x + y  |
+| -=       | x -= y  | x = x - y  |
+| *=       | x += y  | x = x * y  |
+| /=       | x /= y  | x = x / y  |
+| %=       | x %= y  | x = x % y  |
+| **=      | x **= y | x = x ** y |
+| //=      | x //= y | x = x // y |
+| \|=      | x \|= y | x = x \| y |
+| &=       | x &= y  | x = x & y  |
+| ^⁼       | x ^= y  | x = x ^ y  |
+
+```python
+n_sum = n_exp = n_and = 5
+
+# -=
+print(n_sum)
+n_sum += 3
+print(n_sum)
+
+# **=
+print(n_exp)
+n_exp **= 3
+print(n_exp)
+
+# &=
+print(n_and)
+n_and &= 3
+print(n_and)
+```
+
+```
+>> 5
+>> 8
+>> 5
+>> 125
+>> 5
+>> 1
+```
+
+* <h3 style="color:#33FFA2">Logical Operators</h3>
+
+| Operator | case 1               | case 2                 | case 3                 | case 4                  |
+| -------- | -------------------- | ---------------------- | ---------------------- | ----------------------- |
+| or       | True or True = True  | True or False = True   | False or True = True   | False or False = False  |
+| and      | True and True = True | True and False = False | False and True = False | False and False = False |
+| not      | not True = False     | not False = True       |                        |                         |
+
+```python
+print(5 != 4 or 5 < 1)
+print("Ric" in "Costa Rica" and "pura vida" == "pura vida")
+print(5 != 4 and 5 < 1)
+print(not "Ric" in "Costa Rica")
+```
+
+```
+>> True
+>> True
+>> False
+>> False
+```
+
+* <h3 style="color:#33FFA2">Comparison Operators</h3>
+
+When we use comparison, the result is a boolean (`True` if the statement happens, `False` if not) .
+
+| Operator | Name                     | Example |
+| -------- | ------------------------ | ------- |
+| ==       | equal to                 | x == y  |
+| !=       | not equal to             | x != y  |
+| >        | greater than             | x > y   |
+| >=       | greater than or equal to | x >= y  |
+| <        | less than                | x < y   |
+| <=       | less than or less to     | x <= y  |
+
+```python
+score_1 = 57
+score_2 = 57
+score_3 = 42
+print(score_1 == score_2)
+print(score_1 == score_3)
+print(score_1 != score_2)
+print(score_1 != score_3)
+print(score_1 > score_2)
+print(score_1 >= score_3)
+print(score_1 < score_2)
+print(score_1 <= score_3)
+```
+
+```
+>> True
+>> False
+>> False
+>> True
+>> False
+>> True
+>> False
+>> False
+```
+
+* <h3 style="color:#33FFA2">Membership & Identity Operators</h3>
+
+Both of them return a boolean value (`True` or `False`).
+
+| Type       | Operator | How it works                                                 |
+| ---------- | -------- | ------------------------------------------------------------ |
+| Membership | in       | check if the sequence is contained within an element         |
+| Membership | not in   | check if the value is not contained within an element        |
+| Identity   | is       | check if the element is exactly the same as the other element |
+| Identity   | not is   | check if the element is not exactly the same as the other element |
+
+```python
+fruit = "pineapple"
+colors = ["red", "green", "blue"]
+
+print("apple" in "pineapple")
+print("apple" not in "pineapple")
+print("banana" in "pineapple")
+
+print("red" in colors)
+print("bl" in colors)
+
+print(5 == "5")
+print(5 is "5")
+print(5 is not "5")
+
+```
+
+```
+>> True
+>> False
+>> False
+>> True
+>> False
+>> False
+>> False
+>> True
+```
+
 <h2 style="color:#33ECFF">String and Slicing</h2>
 
 A string is a data structure that stores a sequence of characters.
@@ -405,19 +616,105 @@ print("Umma" not in myName)
 
 ​    action
 
+The following code compares two values and indicates if the first of them is less than, greater than or equal to the second one.
+
+```python
+isLess = False
+var1 = 5
+var2 = 5
+
+if var1 < var2 :
+  print("less")
+elif var1 > var2 :
+  print("greater")
+else:
+  print("equal")
+```
+
+```
+>> equal
+```
+
+Now we have a code that indicates if a grade entered is one of an allowed value or not and if it is allowed, if yes, it indicates if the student has passed, failed or should go to extension
+
+```python
+# An integer or float format is required to be entered
+print('What grade did you get?:')
+grade = input()
+
+if float(grade) < 0 or float(grade) > 10:
+  print("It is not a valid grade")
+else:
+  if float(grade) >= 7:
+    print("Congratulations, you passed the course")
+  elif float(grade) >= 6 and float(grade) < 7:
+    print("well, you can still pass the course \ n give your best effort")
+  else:
+    print("Sorry you failed the course")
+
+  if not float(grade) < 7:
+    print("Now you can enroll the next course")
+```
+
+```
+>> What grade did you get?:
+<< 12
+>> It is not a valid grade
+
+>> What grade did you get?:
+<< -5
+>> It is not a valid grade
+
+>> What grade did you get?:
+<< 8.7
+>> Congratulations, you passed the course
+>> Now you can enroll the next course
+
+>> What grade did you get?:
+<< 6.5
+>> well, you can still pass the course 
+   give your best effort
+
+>> What grade did you get?:
+<< 5.3
+>> Sorry you failed the course
+```
+
+* <h3 style="color:#33FFA2">Ternary Operator</h3>
+
+With an ternary operator you can check whether if a statement happens or not by writing it in a single line. You can use it if there are only two possibilities.
+
+```  python
+# Example 01
+is_nice = False
+state1 = "nice" if is_nice else "not nice"
+print(state1)
+
+# Example 02
+theGrade = 9.5
+state2 = "approved" if theGrade >= 6.75 else "failed"
+print(state2)
+
+# Example 03
+condition = True
+print("ally" if condition else "enemy")
+```
+
+```
+>> not nice
+>> approved
+>> ally
+```
+
+### `for`
+
+* <h3 style="color:#33FFA2">Looping through a list</h3>
 
 
 
 
 
-
-
-
-
-
-
-
-
+* <h3 style="color:#33FFA2">Looping through a string</h3>
 
 
 
